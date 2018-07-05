@@ -1,6 +1,6 @@
-package com.adventofcode.solution;
+package com.adventofcode.solution.day1;
 
-public class InverseCaptcha {
+public class Day1_Part1_InverseCaptcha1 {
 
 	public static void checkSum(String input) {
 		int total = 0;
