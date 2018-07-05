@@ -11,7 +11,7 @@ public class Day2_Part1_CorruptionCheckSum {
 		String line;
 		int output = 0;
 		while ((line = reader.readLine()) != null) {
-			output += addRemainderOfZero(line.split(";"));
+			output += getDifferences(line.split(";"));
 		}
 		System.out.println(output);
 		reader.close();
@@ -19,7 +19,7 @@ public class Day2_Part1_CorruptionCheckSum {
 
 	}
 
-	public static int addRemainderOfZero(String[] s) {
+	public static int getDifferences(String[] s) {
 		int min, max = 0;
 		min = Integer.parseInt(s[0]);
 		for (int i = 1; i < s.length; i++) {

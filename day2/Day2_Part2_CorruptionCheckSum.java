@@ -13,7 +13,7 @@ public class Day2_Part2_CorruptionCheckSum {
 		String line;
 		int output = 0;
 		while ((line = reader.readLine()) != null) {
-			output += addRemainderOfZero(line.split(";"));
+			output += getQuotient(line.split(";"));
 		}
 		System.out.println(output);
 		reader.close();
@@ -21,7 +21,7 @@ public class Day2_Part2_CorruptionCheckSum {
 
 	}
 
-	public static int addRemainderOfZero(String[] s) {
+	public static int getQuotient(String[] s) {
 		Collections.sort(Arrays.asList(s));
 		int quotient = 0;
 		for (int i = 0; i < s.length; i++) {
